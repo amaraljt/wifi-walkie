@@ -539,6 +539,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/home/szensei/Projects/wifi_walkie/station/build/esp-idf/espressif__cmake_utilities/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/szensei/Projects/wifi_walkie/station/build/esp-idf/espressif__button/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/home/szensei/Projects/wifi_walkie/station/build/esp-idf/main/cmake_install.cmake")
 endif()
 
