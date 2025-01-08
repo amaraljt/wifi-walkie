@@ -1,0 +1,338 @@
+[1/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/access_point_server.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/access_point_server.c.obj 
+/home/szensei/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"HEAD-HASH-NOTFOUND\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/szensei/Projects/wifi_walkie/access-point/build/config -I/home/szensei/Projects/wifi_walkie/access-point/main -I/opt/esp-idf/components/newlib/platform_include -I/opt/esp-idf/components/freertos/config/include -I/opt/esp-idf/components/freertos/config/include/freertos -I/opt/esp-idf/components/freertos/config/xtensa/include -I/opt/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/opt/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/opt/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/opt/esp-idf/components/freertos/esp_additions/include -I/opt/esp-idf/components/esp_hw_support/include -I/opt/esp-idf/components/esp_hw_support/include/soc -I/opt/esp-idf/components/esp_hw_support/include/soc/esp32 -I/opt/esp-idf/components/esp_hw_support/dma/include -I/opt/esp-idf/components/esp_hw_support/ldo/include -I/opt/esp-idf/components/esp_hw_support/port/esp32/. -I/opt/esp-idf/components/esp_hw_support/port/esp32/include -I/opt/esp-idf/components/heap/include -I/opt/esp-idf/components/log/include -I/opt/esp-idf/components/soc/include -I/opt/esp-idf/components/soc/esp32 -I/opt/esp-idf/components/soc/esp32/include -I/opt/esp-idf/components/hal/platform_port/include -I/opt/esp-idf/components/hal/esp32/include -I/opt/esp-idf/components/hal/include -I/opt/esp-idf/components/esp_rom/include -I/opt/esp-idf/components/esp_rom/include/esp32 -I/opt/esp-idf/components/esp_rom/esp32 -I/opt/esp-idf/components/esp_common/include -I/opt/esp-idf/components/esp_system/include -I/opt/esp-idf/components/esp_system/port/soc -I/opt/esp-idf/components/esp_system/port/include/private -I/opt/esp-idf/components/xtensa/esp32/include -I/opt/esp-idf/components/xtensa/include -I/opt/esp-idf/components/xtensa/deprecated_include -I/opt/esp-idf/components/lwip/include -I/opt/esp-idf/components/lwip/include/apps -I/opt/esp-idf/components/lwip/include/apps/sntp -I/opt/esp-idf/components/lwip/lwip/src/include -I/opt/esp-idf/components/lwip/port/include -I/opt/esp-idf/components/lwip/port/freertos/include -I/opt/esp-idf/components/lwip/port/esp32xx/include -I/opt/esp-idf/components/lwip/port/esp32xx/include/arch -I/opt/esp-idf/components/lwip/port/esp32xx/include/sys -I/opt/esp-idf/components/esp_driver_gpio/include -I/opt/esp-idf/components/esp_pm/include -I/opt/esp-idf/components/mbedtls/port/include -I/opt/esp-idf/components/mbedtls/mbedtls/include -I/opt/esp-idf/components/mbedtls/mbedtls/library -I/opt/esp-idf/components/mbedtls/esp_crt_bundle/include -I/opt/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -I/opt/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -I/opt/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -I/opt/esp-idf/components/esp_app_format/include -I/opt/esp-idf/components/esp_bootloader_format/include -I/opt/esp-idf/components/app_update/include -I/opt/esp-idf/components/bootloader_support/include -I/opt/esp-idf/components/bootloader_support/bootloader_flash/include -I/opt/esp-idf/components/esp_partition/include -I/opt/esp-idf/components/efuse/include -I/opt/esp-idf/components/efuse/esp32/include -I/opt/esp-idf/components/esp_mm/include -I/opt/esp-idf/components/spi_flash/include -I/opt/esp-idf/components/pthread/include -I/opt/esp-idf/components/esp_timer/include -I/opt/esp-idf/components/esp_driver_gptimer/include -I/opt/esp-idf/components/esp_ringbuf/include -I/opt/esp-idf/components/esp_driver_uart/include -I/opt/esp-idf/components/vfs/include -I/opt/esp-idf/components/app_trace/include -I/opt/esp-idf/components/esp_event/include -I/opt/esp-idf/components/nvs_flash/include -I/opt/esp-idf/components/esp_driver_pcnt/include -I/opt/esp-idf/components/esp_driver_spi/include -I/opt/esp-idf/components/esp_driver_mcpwm/include -I/opt/esp-idf/components/esp_driver_ana_cmpr/include -I/opt/esp-idf/components/esp_driver_i2s/include -I/opt/esp-idf/components/sdmmc/include -I/opt/esp-idf/components/esp_driver_sdmmc/include -I/opt/esp-idf/components/esp_driver_sdspi/include -I/opt/esp-idf/components/esp_driver_sdio/include -I/opt/esp-idf/components/esp_driver_dac/include -I/opt/esp-idf/components/esp_driver_rmt/include -I/opt/esp-idf/components/esp_driver_tsens/include -I/opt/esp-idf/components/esp_driver_sdm/include -I/opt/esp-idf/components/esp_driver_i2c/include -I/opt/esp-idf/components/esp_driver_ledc/include -I/opt/esp-idf/components/esp_driver_parlio/include -I/opt/esp-idf/components/esp_driver_usb_serial_jtag/include -I/opt/esp-idf/components/driver/deprecated -I/opt/esp-idf/components/driver/i2c/include -I/opt/esp-idf/components/driver/touch_sensor/include -I/opt/esp-idf/components/driver/twai/include -I/opt/esp-idf/components/driver/touch_sensor/esp32/include -I/opt/esp-idf/components/esp_phy/include -I/opt/esp-idf/components/esp_phy/esp32/include -I/opt/esp-idf/components/esp_vfs_console/include -I/opt/esp-idf/components/esp_netif/include -I/opt/esp-idf/components/wpa_supplicant/include -I/opt/esp-idf/components/wpa_supplicant/port/include -I/opt/esp-idf/components/wpa_supplicant/esp_supplicant/include -I/opt/esp-idf/components/esp_coex/include -I/opt/esp-idf/components/esp_wifi/include -I/opt/esp-idf/components/esp_wifi/wifi_apps/include -I/opt/esp-idf/components/esp_wifi/wifi_apps/nan_app/include -I/opt/esp-idf/components/esp_wifi/include/local -I/opt/esp-idf/components/unity/include -I/opt/esp-idf/components/unity/unity/src -I/opt/esp-idf/components/cmock/CMock/src -I/opt/esp-idf/components/console -I/opt/esp-idf/components/http_parser -I/opt/esp-idf/components/esp-tls -I/opt/esp-idf/components/esp-tls/esp-tls-crypto -I/opt/esp-idf/components/esp_adc/include -I/opt/esp-idf/components/esp_adc/interface -I/opt/esp-idf/components/esp_adc/esp32/include -I/opt/esp-idf/components/esp_adc/deprecated/include -I/opt/esp-idf/components/esp_driver_isp/include -I/opt/esp-idf/components/esp_driver_cam/include -I/opt/esp-idf/components/esp_driver_cam/interface -I/opt/esp-idf/components/esp_driver_jpeg/include -I/opt/esp-idf/components/esp_driver_ppa/include -I/opt/esp-idf/components/esp_eth/include -I/opt/esp-idf/components/esp_gdbstub/include -I/opt/esp-idf/components/esp_hid/include -I/opt/esp-idf/components/tcp_transport/include -I/opt/esp-idf/components/esp_http_client/include -I/opt/esp-idf/components/esp_http_server/include -I/opt/esp-idf/components/esp_https_ota/include -I/opt/esp-idf/components/esp_https_server/include -I/opt/esp-idf/components/esp_psram/include -I/opt/esp-idf/components/esp_lcd/include -I/opt/esp-idf/components/esp_lcd/interface -I/opt/esp-idf/components/protobuf-c/protobuf-c -I/opt/esp-idf/components/protocomm/include/common -I/opt/esp-idf/components/protocomm/include/security -I/opt/esp-idf/components/protocomm/include/transports -I/opt/esp-idf/components/protocomm/include/crypto/srp6a -I/opt/esp-idf/components/protocomm/proto-c -I/opt/esp-idf/components/esp_local_ctrl/include -I/opt/esp-idf/components/espcoredump/include -I/opt/esp-idf/components/espcoredump/include/port/xtensa -I/opt/esp-idf/components/wear_levelling/include -I/opt/esp-idf/components/fatfs/diskio -I/opt/esp-idf/components/fatfs/src -I/opt/esp-idf/components/fatfs/vfs -I/opt/esp-idf/components/idf_test/include -I/opt/esp-idf/components/idf_test/include/esp32 -I/opt/esp-idf/components/ieee802154/include -I/opt/esp-idf/components/json/cJSON -I/opt/esp-idf/components/mqtt/esp-mqtt/include -I/opt/esp-idf/components/nvs_sec_provider/include -I/opt/esp-idf/components/perfmon/include -I/opt/esp-idf/components/spiffs/include -I/opt/esp-idf/components/wifi_provisioning/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/home/szensei/Projects/wifi_walkie/access-point=. -fmacro-prefix-map=/opt/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/access_point_server.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/access_point_server.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/access_point_server.c.obj -c /home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:1:2: error: invalid preprocessing directive #inlude; did you mean #include?
+    1 | #inlude "access_point_server.h"
+      |  ^~~~~~
+      |  include
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c: In function 'udp_server_task':
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:23:23: error: storage size of 'dest_addr' isn't known
+   23 |   struct sockaddr_in6 dest_addr;
+      |                       ^~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:26:24: error: 'AF_INET' undeclared (first use in this function)
+   26 |     if (addr_family == AF_INET) {
+      |                        ^~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:26:24: note: each undeclared identifier is reported only once for each function it appears in
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:28:20: error: invalid use of undefined type 'struct sockaddr_in'
+   28 |       dest_addr_ip4->sin_addr.s_addr = htonl(INADDR_ANY);
+      |                    ^~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:28:40: error: implicit declaration of function 'htonl' [-Werror=implicit-function-declaration]
+   28 |       dest_addr_ip4->sin_addr.s_addr = htonl(INADDR_ANY);
+      |                                        ^~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:28:46: error: 'INADDR_ANY' undeclared (first use in this function)
+   28 |       dest_addr_ip4->sin_addr.s_addr = htonl(INADDR_ANY);
+      |                                              ^~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:29:20: error: invalid use of undefined type 'struct sockaddr_in'
+   29 |       dest_addr_ip4->sin_family = AF_INET;
+      |                    ^~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:30:20: error: invalid use of undefined type 'struct sockaddr_in'
+   30 |       dest_addr_ip4->sin_port = htons(PORT);
+      |                    ^~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:30:33: error: implicit declaration of function 'htons' [-Werror=implicit-function-declaration]
+   30 |       dest_addr_ip4->sin_port = htons(PORT);
+      |                                 ^~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:31:21: error: 'IPPROTO_IP' undeclared (first use in this function)
+   31 |       ip_protocol = IPPROTO_IP;
+      |                     ^~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:32:31: error: 'AF_INET6' undeclared (first use in this function)
+   32 |     } else if (addr_family == AF_INET6) {
+      |                               ^~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:33:7: error: implicit declaration of function 'bzero' [-Werror=implicit-function-declaration]
+   33 |       bzero(&dest_addr.sin6_addr.un, sizeof(dest_addr.sin6_addr.un));
+      |       ^~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:36:21: error: 'IPPROTO_IPV6' undeclared (first use in this function)
+   36 |       ip_protocol = IPPROTO_IPV6;
+      |                     ^~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:39:16: error: implicit declaration of function 'socket' [-Werror=implicit-function-declaration]
+   39 |     int sock = socket(addr_family, SOCK_DGRAM, ip_protocol);
+      |                ^~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:39:36: error: 'SOCK_DGRAM' undeclared (first use in this function)
+   39 |     int sock = socket(addr_family, SOCK_DGRAM, ip_protocol);
+      |                                    ^~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:41:9: error: implicit declaration of function 'ESP_LOGE' [-Werror=implicit-function-declaration]
+   41 |         ESP_LOGE(TAG, "Unable to create socket: errno %d", errno);
+      |         ^~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:41:60: error: 'errno' undeclared (first use in this function)
+   41 |         ESP_LOGE(TAG, "Unable to create socket: errno %d", errno);
+      |                                                            ^~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:1:1: note: 'errno' is defined in header '<errno.h>'; did you forget to '#include <errno.h>'?
+  +++ |+#include <errno.h>
+    1 | #inlude "access_point_server.h"
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:44:5: error: implicit declaration of function 'ESP_LOGI' [-Werror=implicit-function-declaration]
+   44 |     ESP_LOGI(TAG, "Socket created");
+      |     ^~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:56:7: error: implicit declaration of function 'setsockopt' [-Werror=implicit-function-declaration]
+   56 |       setsockopt(sock, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt));
+      |       ^~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:56:24: error: 'SOL_SOCKET' undeclared (first use in this function)
+   56 |       setsockopt(sock, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt));
+      |                        ^~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:56:36: error: 'SO_REUSEADDR' undeclared (first use in this function)
+   56 |       setsockopt(sock, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt));
+      |                                    ^~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:57:38: error: 'IPV6_V6ONLY' undeclared (first use in this function)
+   57 |       setsockopt(sock, IPPROTO_IPV6, IPV6_V6ONLY, &opt, sizeof(opt));
+      |                                      ^~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:62:18: error: storage size of 'timeout' isn't known
+   62 |   struct timeval timeout;
+      |                  ^~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:65:33: error: 'SO_RCVTIMEO' undeclared (first use in this function)
+   65 |   setsockopt (sock, SOL_SOCKET, SO_RCVTIMEO, &timeout, sizeof timeout);
+      |                                 ^~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:66:15: error: implicit declaration of function 'bind' [-Werror=implicit-function-declaration]
+   66 |     int err = bind(sock, (struct sockaddr *)&dest_addr, sizeof(dest_addr));
+      |               ^~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:72:29: error: storage size of 'source_addr' isn't known
+   72 |     struct sockaddr_storage source_addr; // Large enough for both IPv4 or IPv6
+      |                             ^~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:73:5: error: unknown type name 'socklen_t'
+   73 |     socklen_t socklen = sizeof(source_addr);
+      |     ^~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:97:19: error: implicit declaration of function 'recvfrom' [-Werror=implicit-function-declaration]
+   97 |         int len = recvfrom(sock, rx_buffer, sizeof(rx_buffer) - 1, 0, (struct sockaddr *)&source_addr, &socklen);
+      |                   ^~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:107:38: error: 'PF_INET' undeclared (first use in this function)
+  107 |         if (source_addr.ss_family == PF_INET) {
+      |                                      ^~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:108:11: error: implicit declaration of function 'inet_ntoa_r' [-Werror=implicit-function-declaration]
+  108 |           inet_ntoa_r(((struct sockaddr_in *)&source_addr)->sin_addr, addr_str, sizeof(addr_str) - 1);
+      |           ^~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:118:45: error: 'PF_INET6' undeclared (first use in this function)
+  118 |         } else if (source_addr.ss_family == PF_INET6) {
+      |                                             ^~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:119:11: error: implicit declaration of function 'inet6_ntoa_r' [-Werror=implicit-function-declaration]
+  119 |           inet6_ntoa_r(((struct sockaddr_in6 *)&source_addr)->sin6_addr, addr_str, sizeof(addr_str) - 1);
+      |           ^~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:126:19: error: implicit declaration of function 'sendto' [-Werror=implicit-function-declaration]
+  126 |         int err = sendto(sock, payload, strlen(payload), 0, (struct sockaddr *)&source_addr, sizeof(source_addr));
+      |                   ^~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:126:41: error: implicit declaration of function 'strlen' [-Werror=implicit-function-declaration]
+  126 |         int err = sendto(sock, payload, strlen(payload), 0, (struct sockaddr *)&source_addr, sizeof(source_addr));
+      |                                         ^~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:1:1: note: include '<string.h>' or provide a declaration of 'strlen'
+  +++ |+#include <string.h>
+    1 | #inlude "access_point_server.h"
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:126:41: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  126 |         int err = sendto(sock, payload, strlen(payload), 0, (struct sockaddr *)&source_addr, sizeof(source_addr));
+      |                                         ^~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:126:41: note: include '<string.h>' or provide a declaration of 'strlen'
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:136:7: error: implicit declaration of function 'shutdown' [-Werror=implicit-function-declaration]
+  136 |       shutdown(sock, 0);
+      |       ^~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:137:7: error: implicit declaration of function 'close' [-Werror=implicit-function-declaration]
+  137 |       close(sock);
+      |       ^~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:72:29: warning: unused variable 'source_addr' [-Wunused-variable]
+   72 |     struct sockaddr_storage source_addr; // Large enough for both IPv4 or IPv6
+      |                             ^~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:62:18: warning: unused variable 'timeout' [-Wunused-variable]
+   62 |   struct timeval timeout;
+      |                  ^~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:140:3: error: implicit declaration of function 'vTaskDelete' [-Werror=implicit-function-declaration]
+  140 |   vTaskDelete(NULL);
+      |   ^~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:140:15: error: 'NULL' undeclared (first use in this function)
+  140 |   vTaskDelete(NULL);
+      |               ^~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:1:1: note: 'NULL' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+  +++ |+#include <stddef.h>
+    1 | #inlude "access_point_server.h"
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:23:23: warning: unused variable 'dest_addr' [-Wunused-variable]
+   23 |   struct sockaddr_in6 dest_addr;
+      |                       ^~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c: At top level:
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:144:43: error: unknown type name 'esp_event_base_t'
+  144 | static void wifi_event_handler(void* arg, esp_event_base_t event_base,
+      |                                           ^~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:145:35: error: unknown type name 'int32_t'
+  145 |                                   int32_t event_id, void* event_data){
+      |                                   ^~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:1:1: note: 'int32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | #inlude "access_point_server.h"
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c: In function 'wifi_init_softap':
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:159:3: error: implicit declaration of function 'ESP_ERROR_CHECK' [-Werror=implicit-function-declaration]
+  159 |   ESP_ERROR_CHECK(esp_netif_init());
+      |   ^~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:159:19: error: implicit declaration of function 'esp_netif_init' [-Werror=implicit-function-declaration]
+  159 |   ESP_ERROR_CHECK(esp_netif_init());
+      |                   ^~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:160:19: error: implicit declaration of function 'esp_event_loop_create_default' [-Werror=implicit-function-declaration]
+  160 |   ESP_ERROR_CHECK(esp_event_loop_create_default());
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:161:3: error: implicit declaration of function 'esp_netif_create_default_wifi_ap' [-Werror=implicit-function-declaration]
+  161 |   esp_netif_create_default_wifi_ap();
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:163:3: error: unknown type name 'wifi_init_config_t'
+  163 |   wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+      |   ^~~~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:163:28: error: implicit declaration of function 'WIFI_INIT_CONFIG_DEFAULT' [-Werror=implicit-function-declaration]
+  163 |   wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:164:19: error: implicit declaration of function 'esp_wifi_init' [-Werror=implicit-function-declaration]
+  164 |   ESP_ERROR_CHECK(esp_wifi_init(&cfg));
+      |                   ^~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:166:19: error: implicit declaration of function 'esp_event_handler_instance_register' [-Werror=implicit-function-declaration]
+  166 |   ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT,
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:166:55: error: 'WIFI_EVENT' undeclared (first use in this function)
+  166 |   ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT,
+      |                                                       ^~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:167:55: error: 'ESP_EVENT_ANY_ID' undeclared (first use in this function)
+  167 |                                                       ESP_EVENT_ANY_ID,
+      |                                                       ^~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:168:56: error: 'wifi_event_handler' undeclared (first use in this function)
+  168 |                                                       &wifi_event_handler,
+      |                                                        ^~~~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:169:55: error: 'NULL' undeclared (first use in this function)
+  169 |                                                       NULL,
+      |                                                       ^~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:169:55: note: 'NULL' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:172:3: error: unknown type name 'wifi_config_t'
+  172 |   wifi_config_t wifi_config = {
+      |   ^~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:173:7: error: field name not in record or union initializer
+  173 |       .ap = {
+      |       ^
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:173:7: note: (near initialization for 'wifi_config')
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:173:7: warning: braces around scalar initializer
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:173:7: note: (near initialization for 'wifi_config')
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:174:11: error: field name not in record or union initializer
+  174 |           .ssid = EXAMPLE_ESP_WIFI_SSID,
+      |           ^
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:174:11: note: (near initialization for 'wifi_config')
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:3:36: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+    3 | #define EXAMPLE_ESP_WIFI_SSID      "i dare you to join"
+      |                                    ^~~~~~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:174:19: note: in expansion of macro 'EXAMPLE_ESP_WIFI_SSID'
+  174 |           .ssid = EXAMPLE_ESP_WIFI_SSID,
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:3:36: note: (near initialization for 'wifi_config')
+    3 | #define EXAMPLE_ESP_WIFI_SSID      "i dare you to join"
+      |                                    ^~~~~~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:174:19: note: in expansion of macro 'EXAMPLE_ESP_WIFI_SSID'
+  174 |           .ssid = EXAMPLE_ESP_WIFI_SSID,
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:175:11: error: field name not in record or union initializer
+  175 |           .ssid_len = strlen(EXAMPLE_ESP_WIFI_SSID),
+      |           ^
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:175:11: note: (near initialization for 'wifi_config')
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:175:23: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  175 |           .ssid_len = strlen(EXAMPLE_ESP_WIFI_SSID),
+      |                       ^~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:175:23: note: include '<string.h>' or provide a declaration of 'strlen'
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:175:23: warning: excess elements in scalar initializer
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:175:23: note: (near initialization for 'wifi_config')
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:176:11: error: field name not in record or union initializer
+  176 |           .channel = EXAMPLE_ESP_WIFI_CHANNEL,
+      |           ^
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:176:11: note: (near initialization for 'wifi_config')
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:5:36: warning: excess elements in scalar initializer
+    5 | #define EXAMPLE_ESP_WIFI_CHANNEL   1
+      |                                    ^
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:176:22: note: in expansion of macro 'EXAMPLE_ESP_WIFI_CHANNEL'
+  176 |           .channel = EXAMPLE_ESP_WIFI_CHANNEL,
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:5:36: note: (near initialization for 'wifi_config')
+    5 | #define EXAMPLE_ESP_WIFI_CHANNEL   1
+      |                                    ^
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:176:22: note: in expansion of macro 'EXAMPLE_ESP_WIFI_CHANNEL'
+  176 |           .channel = EXAMPLE_ESP_WIFI_CHANNEL,
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:177:11: error: field name not in record or union initializer
+  177 |           .password = EXAMPLE_ESP_WIFI_PASS,
+      |           ^
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:177:11: note: (near initialization for 'wifi_config')
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:4:36: warning: excess elements in scalar initializer
+    4 | #define EXAMPLE_ESP_WIFI_PASS      "monsters12"
+      |                                    ^~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:177:23: note: in expansion of macro 'EXAMPLE_ESP_WIFI_PASS'
+  177 |           .password = EXAMPLE_ESP_WIFI_PASS,
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:4:36: note: (near initialization for 'wifi_config')
+    4 | #define EXAMPLE_ESP_WIFI_PASS      "monsters12"
+      |                                    ^~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:177:23: note: in expansion of macro 'EXAMPLE_ESP_WIFI_PASS'
+  177 |           .password = EXAMPLE_ESP_WIFI_PASS,
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:178:11: error: field name not in record or union initializer
+  178 |           .max_connection = EXAMPLE_MAX_STA_CONN,
+      |           ^
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:178:11: note: (near initialization for 'wifi_config')
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:6:36: error: 'WIFI_AUTH_WPA_WPA2_PSK' undeclared (first use in this function)
+    6 | #define EXAMPLE_MAX_STA_CONN       WIFI_AUTH_WPA_WPA2_PSK
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:178:29: note: in expansion of macro 'EXAMPLE_MAX_STA_CONN'
+  178 |           .max_connection = EXAMPLE_MAX_STA_CONN,
+      |                             ^~~~~~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:6:36: warning: excess elements in scalar initializer
+    6 | #define EXAMPLE_MAX_STA_CONN       WIFI_AUTH_WPA_WPA2_PSK
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:178:29: note: in expansion of macro 'EXAMPLE_MAX_STA_CONN'
+  178 |           .max_connection = EXAMPLE_MAX_STA_CONN,
+      |                             ^~~~~~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:6:36: note: (near initialization for 'wifi_config')
+    6 | #define EXAMPLE_MAX_STA_CONN       WIFI_AUTH_WPA_WPA2_PSK
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:178:29: note: in expansion of macro 'EXAMPLE_MAX_STA_CONN'
+  178 |           .max_connection = EXAMPLE_MAX_STA_CONN,
+      |                             ^~~~~~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:183:11: error: field name not in record or union initializer
+  183 |           .authmode = WIFI_AUTH_WPA2_PSK,
+      |           ^
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:183:11: note: (near initialization for 'wifi_config')
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:183:23: error: 'WIFI_AUTH_WPA2_PSK' undeclared (first use in this function)
+  183 |           .authmode = WIFI_AUTH_WPA2_PSK,
+      |                       ^~~~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:183:23: warning: excess elements in scalar initializer
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:183:23: note: (near initialization for 'wifi_config')
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:185:11: error: field name not in record or union initializer
+  185 |           .pmf_cfg = {
+      |           ^
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:185:11: note: (near initialization for 'wifi_config')
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:185:11: warning: braces around scalar initializer
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:185:11: note: (near initialization for 'wifi_config')
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:186:19: error: field name not in record or union initializer
+  186 |                   .required = true,
+      |                   ^
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:186:19: note: (near initialization for 'wifi_config')
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:186:31: error: 'true' undeclared (first use in this function)
+  186 |                   .required = true,
+      |                               ^~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:1:1: note: 'true' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+  +++ |+#include <stdbool.h>
+    1 | #inlude "access_point_server.h"
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:185:22: warning: excess elements in scalar initializer
+  185 |           .pmf_cfg = {
+      |                      ^
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:185:22: note: (near initialization for 'wifi_config')
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:191:18: error: request for member 'ap' in something not a structure or union
+  191 |       wifi_config.ap.authmode = WIFI_AUTH_OPEN;
+      |                  ^
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:191:33: error: 'WIFI_AUTH_OPEN' undeclared (first use in this function)
+  191 |       wifi_config.ap.authmode = WIFI_AUTH_OPEN;
+      |                                 ^~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:194:19: error: implicit declaration of function 'esp_wifi_set_mode' [-Werror=implicit-function-declaration]
+  194 |   ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_AP));
+      |                   ^~~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:194:37: error: 'WIFI_MODE_AP' undeclared (first use in this function)
+  194 |   ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_AP));
+      |                                     ^~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:195:19: error: implicit declaration of function 'esp_wifi_set_config' [-Werror=implicit-function-declaration]
+  195 |   ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_AP, &wifi_config));
+      |                   ^~~~~~~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:195:39: error: 'WIFI_IF_AP' undeclared (first use in this function)
+  195 |   ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_AP, &wifi_config));
+      |                                       ^~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:196:19: error: implicit declaration of function 'esp_wifi_start' [-Werror=implicit-function-declaration]
+  196 |   ESP_ERROR_CHECK(esp_wifi_start());
+      |                   ^~~~~~~~~~~~~~
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c: At top level:
+/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:17:13: warning: 'udp_server_task' defined but not used [-Wunused-function]
+   17 | static void udp_server_task(void *pvParameters)
+      |             ^~~~~~~~~~~~~~~
+cc1: some warnings being treated as errors
+[2/9] Performing build step for 'bootloader'
+[1/1] cd /home/szensei/Projects/wifi_walkie/access-point/build/bootloader/esp-idf/esptool_py && /home/szensei/.espressif/python_env/idf5.3_py3.13_env/bin/python /opt/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/szensei/Projects/wifi_walkie/access-point/build/bootloader/bootloader.bin
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+ninja: build stopped: subcommand failed.
