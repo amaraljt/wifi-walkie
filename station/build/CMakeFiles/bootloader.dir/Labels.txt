@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/szensei/Projects/wifi_walkie/station/build/CMakeFiles/bootloader
+/home/szensei/Projects/wifi_walkie/station/build/CMakeFiles/bootloader.rule
+/home/szensei/Projects/wifi_walkie/station/build/CMakeFiles/bootloader-complete.rule
+/home/szensei/Projects/wifi_walkie/station/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/szensei/Projects/wifi_walkie/station/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/szensei/Projects/wifi_walkie/station/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/szensei/Projects/wifi_walkie/station/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/szensei/Projects/wifi_walkie/station/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/szensei/Projects/wifi_walkie/station/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/szensei/Projects/wifi_walkie/station/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
