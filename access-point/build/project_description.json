@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "access-point",
-    "project_version":    "19dbb85",
+    "project_version":    "9ed6ca9-dirty",
     "project_path":       "/home/szensei/Projects/wifi_walkie/access-point",
     "idf_path":           "/opt/esp-idf",
     "build_dir":          "/home/szensei/Projects/wifi_walkie/access-point/build",
@@ -1180,7 +1180,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/szensei/Projects/wifi_walkie/access-point/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/szensei/Projects/wifi_walkie/access-point/main/access_point.c", "/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.h", "/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c" ],
+            "sources": [ "/home/szensei/Projects/wifi_walkie/access-point/main/access_point.c", "/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.h", "/home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c", "/home/szensei/Projects/wifi_walkie/access-point/main/i2c_lcd.h", "/home/szensei/Projects/wifi_walkie/access-point/main/i2c_lcd.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {

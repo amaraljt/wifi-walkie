@@ -1,4 +1,5 @@
 #include "access_point_server.h"
+#include "i2c_lcd.h"
 
 #define EXAMPLE_ESP_WIFI_SSID      "i dare you to join"
 #define EXAMPLE_ESP_WIFI_PASS      "monsters12"
@@ -6,8 +7,6 @@
 #define EXAMPLE_MAX_STA_CONN       WIFI_AUTH_WPA_WPA2_PSK
 
 // UDP definitions
-#define CONFIG_EXAMPLE_IPV4 192.168.4.1
-#define CONFIG_EXAMPLE_IPV6 /* insert IPv6 */
 #define PORT 12345
 
 static const char *TAG = "wifi softAP";
@@ -16,6 +15,7 @@ static const char *payload = "AP message successfully received";
 // UDP Server Task
 void udp_server_task(void *pvParameters)
 {
+  ESP_LOGI(TAG, "Called udp_server_task");
   char rx_buffer[128];
   char addr_str[128];
   int addr_family = (int)pvParameters;
@@ -119,9 +119,19 @@ void udp_server_task(void *pvParameters)
           inet6_ntoa_r(((struct sockaddr_in6 *)&source_addr)->sin6_addr, addr_str, sizeof(addr_str) - 1);
         }
 
+        // Initialize I2C LCD
+        i2c_master_init();
+        ESP_LOGI(TAG, "I2C initialized successfully!");
+
+        lcd_init();
+        vTaskDelay(pdMS_TO_TICKS(100));
+        lcd_put_cur(0, 0);
+
         rx_buffer[len] = 0; // Null-terminate whatever we received and treat like a string...
         ESP_LOGI(TAG, "Received %d bytes from client %s:", len, addr_str);
         ESP_LOGI(TAG, "%s", rx_buffer);
+
+        lcd_send_string(rx_buffer);        
 
         int err = sendto(sock, payload, strlen(payload), 0, (struct sockaddr *)&source_addr, sizeof(source_addr));
         if (err < 0) {

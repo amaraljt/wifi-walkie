@@ -1,0 +1,70 @@
+[1/5] cd /home/szensei/Projects/wifi_walkie/access-point/build/esp-idf/esptool_py && /home/szensei/.espressif/python_env/idf5.3_py3.13_env/bin/python /opt/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/szensei/Projects/wifi_walkie/access-point/build/partition_table/partition-table.bin /home/szensei/Projects/wifi_walkie/access-point/build/access-point.bin
+access-point.bin binary size 0xbea30 bytes. Smallest app partition is 0x100000 bytes. 0x415d0 bytes (26%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/szensei/Projects/wifi_walkie/access-point/build/bootloader/esp-idf/esptool_py && /home/szensei/.espressif/python_env/idf5.3_py3.13_env/bin/python /opt/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/szensei/Projects/wifi_walkie/access-point/build/bootloader/bootloader.bin
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /opt/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/opt/esp-idf -D "SERIAL_TOOL=/home/szensei/.espressif/python_env/idf5.3_py3.13_env/bin/python;;/opt/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/szensei/Projects/wifi_walkie/access-point/build -P /opt/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB1 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 access-point.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/ttyUSB1
+Connecting......
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 3c:8a:1f:0c:ef:9c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000cefff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26752 bytes to 16367...
+Writing at 0x00001000... (100 %)
+Wrote 26752 bytes (16367 compressed) at 0x00001000 in 0.7 seconds (effective 324.4 kbit/s)...
+Hash of data verified.
+Compressed 780848 bytes to 488932...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001cf37... (6 %)
+Writing at 0x00025af2... (10 %)
+Writing at 0x0003095a... (13 %)
+Writing at 0x000362cb... (16 %)
+Writing at 0x0003c51b... (20 %)
+Writing at 0x00042060... (23 %)
+Writing at 0x0004789a... (26 %)
+Writing at 0x0004d3c3... (30 %)
+Writing at 0x00053047... (33 %)
+Writing at 0x00058e5f... (36 %)
+Writing at 0x0005ed32... (40 %)
+Writing at 0x00065160... (43 %)
+Writing at 0x0006a3ee... (46 %)
+Writing at 0x0006f6cf... (50 %)
+Writing at 0x00074e17... (53 %)
+Writing at 0x0007a6c6... (56 %)
+Writing at 0x0007fa25... (60 %)
+Writing at 0x00085000... (63 %)
+Writing at 0x0008acf0... (66 %)
+Writing at 0x00090507... (70 %)
+Writing at 0x000961ce... (73 %)
+Writing at 0x0009bba5... (76 %)
+Writing at 0x000a15aa... (80 %)
+Writing at 0x000ab47a... (83 %)
+Writing at 0x000b2fba... (86 %)
+Writing at 0x000b8b86... (90 %)
+Writing at 0x000be629... (93 %)
+Writing at 0x000c4801... (96 %)
+Writing at 0x000c9f8d... (100 %)
+Wrote 780848 bytes (488932 compressed) at 0x00010000 in 11.9 seconds (effective 525.5 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 717.8 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

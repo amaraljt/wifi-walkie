@@ -1,8 +1,5 @@
 #include "station_wifi.h"
 
-#define LED    GPIO_NUM_2
-#define BUTTON GPIO_NUM_15
-
 #define CONFIG_EXAMPLE_IPV4 192.168.4.1
 #define HOST_IP_ADDR "192.168.4.1"
 #define PORT 12345
@@ -49,7 +46,7 @@ static EventGroupHandle_t s_wifi_event_group;
 #define WIFI_FAIL_BIT      BIT1
 
 static const char *TAG = "wifi station";
-static const char *payload = "Message from ESP32 station";
+static const char *payload = "DINNER IS READY!";
 
 static int s_retry_num = 0;
 

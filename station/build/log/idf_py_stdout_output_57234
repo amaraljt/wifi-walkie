@@ -1,0 +1,135 @@
+[0;32mI (13) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (13) boot: compile time Jan  7 2025 16:48:15[0m
+[0;32mI (14) boot: Multicore bootloader[0m
+[0;32mI (18) boot: chip revision: v3.1[0m
+[0;32mI (21) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (26) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (31) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (35) boot: Enabling RNG early entropy source...[0m
+[0;32mI (41) boot: Partition Table:[0m
+[0;32mI (44) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (74) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=19114h (102676) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0002913c vaddr=3ffb0000 size=03f2ch ( 16172) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0002d070 vaddr=40080000 size=02fa8h ( 12200) load[0m
+[0;32mI (133) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=84b30h (543536) map[0m
+[0;32mI (322) esp_image: segment 4: paddr=000b4b58 vaddr=40082fa8 size=146c4h ( 83652) load[0m
+[0;32mI (367) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (367) boot: Disabling RNG early entropy source...[0m
+[0;32mI (379) cpu_start: Multicore app[0m
+[0;32mI (388) cpu_start: Pro cpu start user code[0m
+[0;32mI (388) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (388) app_init: Application information:[0m
+[0;32mI (391) app_init: Project name:     station[0m
+[0;32mI (396) app_init: App version:      9ed6ca9-dirty[0m
+[0;32mI (401) app_init: Compile time:     Jan  7 2025 18:40:19[0m
+[0;32mI (407) app_init: ELF file SHA256:  f28e358d2...[0m
+[0;32mI (412) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (418) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (423) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (428) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (433) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (440) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (446) heap_init: At 3FFB81A8 len 00027E58 (159 KiB): DRAM[0m
+[0;32mI (452) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (458) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 4009766C len 00008994 (34 KiB): IRAM[0m
+[0;32mI (473) spi_flash: detected chip: generic[0m
+[0;32mI (476) spi_flash: flash io: dio[0m
+[0;33mW (480) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (494) main_task: Started on CPU0[0m
+[0;32mI (504) main_task: Calling app_main()[0m
+[0;32mI (534) Wifi Station: ESP_WIFI_MODE_STA[0m
+[0;32mI (544) wifi:wifi driver task: 3ffc0274, prio:23, stack:6656, core=0[0m
+[0;32mI (554) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (554) wifi:wifi certification version: v7.0[0m
+[0;32mI (554) wifi:config NVS flash: enabled[0m
+[0;32mI (554) wifi:config nano formating: disabled[0m
+[0;32mI (564) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (564) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (574) wifi:Init management short buffer num: 32[0m
+[0;32mI (574) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (584) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (584) wifi:Init static rx buffer num: 10[0m
+[0;32mI (584) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (594) wifi_init: rx ba win: 6[0m
+[0;32mI (594) wifi_init: accept mbox: 6[0m
+[0;32mI (604) wifi_init: tcpip mbox: 32[0m
+[0;32mI (604) wifi_init: udp mbox: 6[0m
+[0;32mI (604) wifi_init: tcp mbox: 6[0m
+[0;32mI (614) wifi_init: tcp tx win: 5760[0m
+[0;32mI (614) wifi_init: tcp rx win: 5760[0m
+[0;32mI (624) wifi_init: tcp mss: 1440[0m
+[0;32mI (624) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (624) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (634) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (644) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;33mW (734) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (784) wifi:mode : sta (3c:8a:1f:0c:7c:c4)[0m
+[0;32mI (784) wifi:enable tsf[0m
+[0;32mI (784) wifi station: wifi_init_sta finished.[0m
+[0;32mI (794) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (804) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2694) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2714) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2724) wifi:connected with i dare you to join, aid = 1, channel 1, 40U, bssid = 3c:8a:1f:0c:ef:9d[0m
+[0;32mI (2734) wifi:security: WPA3-SAE, phy: bgn, rssi: -29[0m
+[0;32mI (2734) wifi:pm start, type: 1[0m
+
+[0;32mI (2734) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2764) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (2764) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (3744) esp_netif_handlers: sta ip: 192.168.4.2, mask: 255.255.255.0, gw: 192.168.4.1[0m
+[0;32mI (3744) wifi station: got ip:192.168.4.2[0m
+[0;32mI (3744) wifi station: connected to ap SSID:i dare you to join password:monsters12[0m
+[0;32mI (18284) Wifi Station: Button Pressed[0m
+[0;32mI (18284) wifi station: Socket created, sending to 192.168.4.1:12345[0m
+[0;32mI (18284) wifi station: Message sent[0m
+[0;32mI (18294) Wifi Station: Button Pressed[0m
+[0;32mI (18294) wifi:<ba-add>idx:0 (ifx:0, 3c:8a:1f:0c:ef:9d), tid:0, ssn:0, winSize:64[0m
+[0;32mI (18304) Wifi Station: Button Pressed[0m
+[0;32mI (18314) Wifi Station: Button Pressed[0m
+[0;32mI (18314) wifi station: Received 32 bytes from 192.168.4.1:[0m
+[0;32mI (18314) wifi station: AP message successfully received[0m
+[0;32mI (18324) Wifi Station: Button Pressed[0m
+[0;32mI (18334) Wifi Station: Button Pressed[0m
+[0;32mI (18344) Wifi Station: Button Pressed[0m
+[0;32mI (18354) Wifi Station: Button Pressed[0m
+[0;32mI (18364) Wifi Station: Button Pressed[0m
+[0;32mI (18374) Wifi Station: Button Pressed[0m
+[0;32mI (18384) Wifi Station: Button Pressed[0m
+[0;32mI (18394) Wifi Station: Button Pressed[0m
+[0;32mI (18404) Wifi Station: Button Pressed[0m
+[0;32mI (18414) Wifi Station: Button Pressed[0m
+[0;32mI (18424) Wifi Station: Button Pressed[0m
+[0;32mI (18434) Wifi Station: Button Pressed[0m
+[0;32mI (20314) wifi station: Message sent[0m
+[0;32mI (20324) wifi station: Received 32 bytes from 192.168.4.1:[0m
+[0;32mI (20324) wifi station: AP message successfully received[0m
+[0;32mI (22324) wifi station: Message sent[0m
+[0;32mI (22334) wifi station: Received 32 bytes from 192.168.4.1:[0m
+[0;32mI (22334) wifi station: AP message successfully received[0m
+[0;32mI (24334) wifi station: Message sent[0m
+[0;32mI (24334) wifi station: Received 32 bytes from 192.168.4.1:[0m
+[0;32mI (24334) wifi station: AP message successfully received[0m
+[0;32mI (26344) wifi station: Message sent[0m
+[0;32mI (26344) wifi station: Received 32 bytes from 192.168.4.1:[0m
+[0;32mI (26344) wifi station: AP message successfully received[0m
+[0;32mI (28354) wifi station: Message sent[0m
+[0;32mI (28364) wifi station: Received 32 bytes from 192.168.4.1:[0m
+[0;32mI (28364) wifi station: AP message successfully received[0m
+[0;32mI (30364) wifi station: Message sent[0m
+[0;32mI (30364) wifi station: Received 32 bytes from 192.168.4.1:[0m
+[0;32mI (30364) wifi station: AP message successfully received[0m
+[0;32mI (32374) wifi station: Message sent[0m
+[0;32mI (32374) wifi station: Received 32 bytes from 192.168.4.1:[0m
+[0;32mI (32374) wifi station: AP message successfully received[0m
+[0;32mI (34384) wifi station: Message sent[0m
+[0;32mI (34394) wifi station: Received 32 bytes from 192.168.4.1:[0m
+[0;32mI (34394) wifi station: AP message successfully received[0m
+[0;32mI (36394) wifi station: Message sent[0m
+[0;32mI (36394) wifi station: Received 32 bytes from 192.168.4.1:[0m
+[0;32mI (36394) wifi station: AP message successfully received[0m

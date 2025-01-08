@@ -1,0 +1,61 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB1 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d814b: i2c_master_init at /home/szensei/Projects/wifi_walkie/access-point/main/i2c_lcd.c:23 (discriminator 1)
+[0m
+[0;33m--- 0x4008984b: _esp_error_check_failed at /opt/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081a7e: panic_abort at /opt/esp-idf/components/esp_system/panic.c:463
+0x40089855: esp_system_abort at /opt/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40091569: abort at /opt/esp-idf/components/newlib/abort.c:38
+0x4008984b: _esp_error_check_failed at /opt/esp-idf/components/esp_system/esp_err.c:49
+0x400d814b: i2c_master_init at /home/szensei/Projects/wifi_walkie/access-point/main/i2c_lcd.c:23 (discriminator 1)
+0x400d7e90: udp_server_task at /home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:123
+0x4008a3e9: vPortTaskWrapper at /opt/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d814b: i2c_master_init at /home/szensei/Projects/wifi_walkie/access-point/main/i2c_lcd.c:23 (discriminator 1)
+[0m
+[0;33m--- 0x4008984b: _esp_error_check_failed at /opt/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081a7e: panic_abort at /opt/esp-idf/components/esp_system/panic.c:463
+0x40089855: esp_system_abort at /opt/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40091569: abort at /opt/esp-idf/components/newlib/abort.c:38
+0x4008984b: _esp_error_check_failed at /opt/esp-idf/components/esp_system/esp_err.c:49
+0x400d814b: i2c_master_init at /home/szensei/Projects/wifi_walkie/access-point/main/i2c_lcd.c:23 (discriminator 1)
+0x400d7e90: udp_server_task at /home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:123
+0x4008a3e9: vPortTaskWrapper at /opt/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d814b: i2c_master_init at /home/szensei/Projects/wifi_walkie/access-point/main/i2c_lcd.c:23 (discriminator 1)
+[0m
+[0;33m--- 0x4008984b: _esp_error_check_failed at /opt/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081a7e: panic_abort at /opt/esp-idf/components/esp_system/panic.c:463
+0x40089855: esp_system_abort at /opt/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40091569: abort at /opt/esp-idf/components/newlib/abort.c:38
+0x4008984b: _esp_error_check_failed at /opt/esp-idf/components/esp_system/esp_err.c:49
+0x400d814b: i2c_master_init at /home/szensei/Projects/wifi_walkie/access-point/main/i2c_lcd.c:23 (discriminator 1)
+0x400d7e90: udp_server_task at /home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:123
+0x4008a3e9: vPortTaskWrapper at /opt/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d814b: i2c_master_init at /home/szensei/Projects/wifi_walkie/access-point/main/i2c_lcd.c:23 (discriminator 1)
+[0m
+[0;33m--- 0x4008984b: _esp_error_check_failed at /opt/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081a7e: panic_abort at /opt/esp-idf/components/esp_system/panic.c:463
+0x40089855: esp_system_abort at /opt/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40091569: abort at /opt/esp-idf/components/newlib/abort.c:38
+0x4008984b: _esp_error_check_failed at /opt/esp-idf/components/esp_system/esp_err.c:49
+0x400d814b: i2c_master_init at /home/szensei/Projects/wifi_walkie/access-point/main/i2c_lcd.c:23 (discriminator 1)
+0x400d7e90: udp_server_task at /home/szensei/Projects/wifi_walkie/access-point/main/access_point_server.c:123
+0x4008a3e9: vPortTaskWrapper at /opt/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m

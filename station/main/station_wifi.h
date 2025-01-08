@@ -1,6 +1,7 @@
 #ifndef STATION_WIFI_HEADER_H_
 #define STATION_WIFI_HEADER_H_
 
+#include <stdio.h>
 #include <string.h>
 #include <sys/param.h>
 #include "freertos/FreeRTOS.h"

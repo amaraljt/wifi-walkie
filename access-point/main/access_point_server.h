@@ -19,6 +19,9 @@
 #include "lwip/sockets.h"
 #include <lwip/netdb.h>
 
+#define CONFIG_EXAMPLE_IPV4 192.168.4.1
+#define CONFIG_EXAMPLE_IPV6 /* insert IPv6 */
+
 void udp_server_task(void *);
 void wifi_event_handler(void *, esp_event_base_t, int32_t, void *);
 void wifi_init_softap(void);
