@@ -115,6 +115,8 @@ void lcd_init(void){
   // Display ON with cursor
   lcd_send_cmd(0x0C);
   vTaskDelay(pdMS_TO_TICKS(2));
+
+  ESP_LOGI(TAG, "Initialized.");
 }
 
 void lcd_send_string(char *str){
