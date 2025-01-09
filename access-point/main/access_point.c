@@ -30,9 +30,6 @@ void app_main(void)
   #ifdef CONFIG_EXAMPLE_IPV4
     xTaskCreate(udp_server_task, "udp_server", 4096, (void*)AF_INET, 5, NULL);
   #endif
-  #ifdef CONFIG_EXAMPLE_IPV6
-    xTaskCreate(udp_server_task, "udp_server", 4096, (void*)AF_INET6, 5, NULL);
-  #endif
 }
 
 
