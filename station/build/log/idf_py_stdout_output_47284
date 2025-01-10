@@ -1,0 +1,172 @@
+[0;32mI (13) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (13) boot: compile time Jan  7 2025 16:48:15[0m
+[0;32mI (13) boot: Multicore bootloader[0m
+[0;32mI (18) boot: chip revision: v3.1[0m
+[0;32mI (21) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (26) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (31) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (35) boot: Enabling RNG early entropy source...[0m
+[0;32mI (41) boot: Partition Table:[0m
+[0;32mI (44) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (74) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a59ch (107932) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=0002a5c4 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0002a5d0 vaddr=3ffb0000 size=03f3ch ( 16188) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=0002e514 vaddr=40080000 size=01b04h (  6916) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=884d0h (558288) map[0m
+[0;32mI (338) esp_image: segment 5: paddr=000b84f8 vaddr=40081b04 size=15b68h ( 88936) load[0m
+[0;32mI (384) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (384) boot: Disabling RNG early entropy source...[0m
+[0;32mI (397) cpu_start: Multicore app[0m
+[0;32mI (405) cpu_start: Pro cpu start user code[0m
+[0;32mI (405) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (405) app_init: Application information:[0m
+[0;32mI (408) app_init: Project name:     station[0m
+[0;32mI (413) app_init: App version:      f404ee9-dirty[0m
+[0;32mI (418) app_init: Compile time:     Jan  8 2025 19:33:31[0m
+[0;32mI (424) app_init: ELF file SHA256:  dd85344ae...[0m
+[0;32mI (430) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (436) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (440) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (445) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (450) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (457) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (463) heap_init: At 3FFB82A0 len 00027D60 (159 KiB): DRAM[0m
+[0;32mI (470) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (476) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (482) heap_init: At 4009766C len 00008994 (34 KiB): IRAM[0m
+[0;32mI (490) spi_flash: detected chip: generic[0m
+[0;32mI (493) spi_flash: flash io: dio[0m
+[0;33mW (497) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (511) main_task: Started on CPU0[0m
+[0;32mI (521) main_task: Calling app_main()[0m
+[0;32mI (521) button: IoT Button Version: 3.5.0[0m
+[0;32mI (521) gpio: GPIO[15]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (551) Wifi Station: ESP_WIFI_MODE_STA[0m
+[0;32mI (571) wifi:wifi driver task: 3ffc0428, prio:23, stack:6656, core=0[0m
+[0;32mI (581) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (581) wifi:wifi certification version: v7.0[0m
+[0;32mI (581) wifi:config NVS flash: enabled[0m
+[0;32mI (581) wifi:config nano formating: disabled[0m
+[0;32mI (591) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (591) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (601) wifi:Init management short buffer num: 32[0m
+[0;32mI (601) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (601) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (611) wifi:Init static rx buffer num: 10[0m
+[0;32mI (611) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (621) wifi_init: rx ba win: 6[0m
+[0;32mI (621) wifi_init: accept mbox: 6[0m
+[0;32mI (621) wifi_init: tcpip mbox: 32[0m
+[0;32mI (631) wifi_init: udp mbox: 6[0m
+[0;32mI (631) wifi_init: tcp mbox: 6[0m
+[0;32mI (641) wifi_init: tcp tx win: 5760[0m
+[0;32mI (641) wifi_init: tcp rx win: 5760[0m
+[0;32mI (641) wifi_init: tcp mss: 1440[0m
+[0;32mI (651) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (651) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (661) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (671) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (761) wifi:mode : sta (3c:8a:1f:0c:7c:c4)[0m
+[0;32mI (761) wifi:enable tsf[0m
+[0;32mI (761) wifi station: wifi_init_sta finished.[0m
+[0;32mI (771) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (771) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2811) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2821) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2841) wifi:connected with i dare you to join, aid = 1, channel 1, 40U, bssid = 3c:8a:1f:0c:ef:9d[0m
+[0;32mI (2841) wifi:security: WPA3-SAE, phy: bgn, rssi: -44[0m
+[0;32mI (2841) wifi:pm start, type: 1[0m
+
+[0;32mI (2841) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2901) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (2911) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (3851) esp_netif_handlers: sta ip: 192.168.4.2, mask: 255.255.255.0, gw: 192.168.4.1[0m
+[0;32mI (3851) wifi station: got ip:192.168.4.2[0m
+[0;32mI (3851) wifi station: connected to ap SSID:i dare you to join password:monsters12[0m
+[0;32mI (11351) Wifi Station: BUTTON_SINGLE_CLICK[0m
+[0;32mI (11351) wifi station: Socket created, sending to 192.168.4.1:12345[0m
+[0;32mI (11361) wifi station: Message sent[0m
+[0;32mI (11371) wifi:<ba-add>idx:0 (ifx:0, 3c:8a:1f:0c:ef:9d), tid:0, ssn:0, winSize:64[0m
+[0;31mE (21361) wifi station: recvfrom failed: errno 11[0m
+[0;32mI (23361) wifi station: Shutting down socket...[0m
+[0;32mI (32851) Wifi Station: BUTTON_SINGLE_CLICK[0m
+[0;32mI (32851) wifi station: Socket created, sending to 192.168.4.1:12345[0m
+[0;32mI (32851) wifi station: Message sent[0m
+[0;32mI (32861) wifi:starting SA query procedure with AP(3c:8a:1f:0c:ef:9d)[0m
+[0;32mI (32861) wifi:Send SA Query req with transaction id 1034[0m
+[0;32mI (33061) wifi:Send SA Query req with transaction id 1035[0m
+[0;32mI (33261) wifi:Send SA Query req with transaction id 1036[0m
+[0;32mI (33461) wifi:Send SA Query req with transaction id 1037[0m
+[0;32mI (33661) wifi:Send SA Query req with transaction id 1038[0m
+[0;32mI (33861) wifi:Send SA Query req with transaction id 1039[0m
+[0;32mI (33891) wifi:No response to 6 SA Queries, reset connection sending disassoc[0m
+[0;32mI (33891) wifi:state: run -> init (0xd100)[0m
+[0;32mI (33901) wifi:pm stop, total sleep time: 26808619 us / 31052582 us[0m
+
+[0;32mI (33901) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (33901) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (33911) wifi station: retry to connect to the AP[0m
+[0;32mI (33911) wifi station: connect to the AP fail[0m
+[0;32mI (33921) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (33921) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (33941) wifi:state: auth -> init (0x6c0)[0m
+[0;32mI (33951) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (33951) wifi station: retry to connect to the AP[0m
+[0;32mI (33951) wifi station: connect to the AP fail[0m
+[0;32mI (36371) wifi station: retry to connect to the AP[0m
+[0;32mI (36371) wifi station: connect to the AP fail[0m
+[0;32mI (36381) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (36381) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (38411) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (38421) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (38441) wifi:connected with i dare you to join, aid = 1, channel 1, 40U, bssid = 3c:8a:1f:0c:ef:9d[0m
+[0;32mI (38441) wifi:security: WPA3-SAE, phy: bgn, rssi: -47[0m
+[0;32mI (38481) wifi:pm start, type: 1[0m
+
+[0;32mI (38481) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (38491) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (38501) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (39491) esp_netif_handlers: sta ip: 192.168.4.2, mask: 255.255.255.0, gw: 192.168.4.1[0m
+[0;32mI (39491) wifi station: got ip:192.168.4.2[0m
+[0;31mE (42861) wifi station: recvfrom failed: errno 11[0m
+[0;32mI (44861) wifi station: Shutting down socket...[0m
+[0;32mI (59481) Wifi Station: BUTTON_SINGLE_CLICK[0m
+[0;32mI (59481) wifi station: Socket created, sending to 192.168.4.1:12345[0m
+[0;32mI (59481) wifi station: Message sent[0m
+[0;32mI (59501) wifi:<ba-add>idx:0 (ifx:0, 3c:8a:1f:0c:ef:9d), tid:0, ssn:0, winSize:64[0m
+����������������������������������������������������������������ecvfrom failed: errno 11[0m
+[0;32mI (71491) wifi station: Shutting down socket...[0m
+[0;32mI (77271) Wifi Station: BUTTON_SINGLE_CLICK[0m
+[0;32mI (77271) wifi station: Socket created, sending to 192.168.4.1:12345[0m
+[0;32mI (77271) wifi station: Message sent[0m
+[0;31mE (87271) wifi station: recvfrom failed: errno 11[0m
+[0;32mI (89271) wifi station: Shutting down socket...[0m
+����������������������������������������������������������������BUTTON_SINGLE_CLICK[0m
+[0;32mI (102261) wifi station: Socket created, sending to 192.168.4.1:12345[0m
+[0;32mI (102261) wifi station: Message sent[0m
+[0;31mE (112261) wifi station: recvfrom failed: errno 11[0m
+[0;32mI (114261) wifi station: Shutting down socket...[0m
+���������������������������������������������������������������� BUTTON_SINGLE_CLICK[0m
+[0;32mI (1845831) wifi station: Socket created, sending to 192.168.4.1:12345[0m
+[0;32mI (1845831) wifi station: Message sent[0m
+[0;31mE (1855841) wifi station: recvfrom failed: errno 11[0m
+[0;32mI (1857841) wifi station: Shutting down socket...[0m
+���������������������������������������������������������������� BUTTON_SINGLE_CLICK[0m
+[0;32mI (2018301) wifi station: Socket created, sending to 192.168.4.1:12345[0m
+[0;32mI (2018301) wifi station: Message sent[0m
+���������������������������������������������������������������� recvfrom failed: errno 11[0m
+[0;32mI (2030301) wifi station: Shutting down socket...[0m
+���������������������������������������������������������������� BUTTON_SINGLE_CLICK[0m
+[0;32mI (2083391) wifi station: Socket created, sending to 192.168.4.1:12345[0m
+[0;32mI (2083391) wifi station: Message sent[0m
+���������������������������������������������������������������� recvfrom failed: errno 11[0m
+[0;32mI (2095391) wifi station: Shutting down socket...[0m
+���������������������������������������������������������������� BUTTON_SINGLE_CLICK[0m
+[0;32mI (2289711) wifi station: Socket created, sending to 192.168.4.1:12345[0m
+[0;32mI (2289711) wifi station: Message sent[0m
+���������������������������������������������������������������� recvfrom failed: errno 11[0m
+[0;32mI (2301721) wifi station: Shutting down socket...[0m

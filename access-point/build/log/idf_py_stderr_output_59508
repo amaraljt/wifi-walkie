@@ -1,0 +1,7 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB1 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d818f: i2c_master_init at /home/szensei/Projects/wifi_walkie/access-point/main/i2c_lcd.c:23 (discriminator 1)
+[0m
+[0m

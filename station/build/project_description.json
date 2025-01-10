@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "station",
-    "project_version":    "97af725-dirty",
+    "project_version":    "f404ee9-dirty",
     "project_path":       "/home/szensei/Projects/wifi_walkie/station",
     "idf_path":           "/opt/esp-idf",
     "build_dir":          "/home/szensei/Projects/wifi_walkie/station/build",

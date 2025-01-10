@@ -1,0 +1,558 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan  7 2025 17:31:14[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a97ch (108924) map[0m
+[0;32mI (143) esp_image: segment 1: paddr=0002a9a4 vaddr=3ffb0000 size=03f2ch ( 16172) load[0m
+[0;32mI (149) esp_image: segment 2: paddr=0002e8d8 vaddr=40080000 size=01740h (  5952) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=887e8h (559080) map[0m
+[0;32mI (348) esp_image: segment 4: paddr=000b8810 vaddr=40081740 size=16248h ( 90696) load[0m
+[0;32mI (396) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (396) boot: Disabling RNG early entropy source...[0m
+[0;32mI (409) cpu_start: Multicore app[0m
+[0;32mI (417) cpu_start: Pro cpu start user code[0m
+[0;32mI (417) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (417) app_init: Application information:[0m
+[0;32mI (420) app_init: Project name:     access-point[0m
+[0;32mI (425) app_init: App version:      f404ee9-dirty[0m
+[0;32mI (431) app_init: Compile time:     Jan  8 2025 17:41:39[0m
+[0;32mI (437) app_init: ELF file SHA256:  d9708cf99...[0m
+[0;32mI (442) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (448) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (452) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (457) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (462) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (470) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (475) heap_init: At 3FFB81C8 len 00027E38 (159 KiB): DRAM[0m
+[0;32mI (482) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (488) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (494) heap_init: At 40097988 len 00008678 (33 KiB): IRAM[0m
+[0;32mI (502) spi_flash: detected chip: generic[0m
+[0;32mI (505) spi_flash: flash io: dio[0m
+[0;33mW (509) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (523) main_task: Started on CPU0[0m
+[0;32mI (533) main_task: Calling app_main()[0m
+[0;32mI (543) wifi softAP: ESP_WIFI_MODE_AP[0m
+[0;32mI (563) wifi:wifi driver task: 3ffc01ac, prio:23, stack:6656, core=0[0m
+[0;32mI (563) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (563) wifi:wifi certification version: v7.0[0m
+[0;32mI (573) wifi:config NVS flash: enabled[0m
+[0;32mI (573) wifi:config nano formating: disabled[0m
+[0;32mI (573) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (573) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (583) wifi:Init management short buffer num: 32[0m
+[0;32mI (583) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (593) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (593) wifi:Init static rx buffer num: 10[0m
+[0;32mI (593) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (603) wifi_init: rx ba win: 6[0m
+[0;32mI (603) wifi_init: accept mbox: 6[0m
+[0;32mI (613) wifi_init: tcpip mbox: 32[0m
+[0;32mI (613) wifi_init: udp mbox: 6[0m
+[0;32mI (613) wifi_init: tcp mbox: 6[0m
+[0;32mI (623) wifi_init: tcp tx win: 5760[0m
+[0;32mI (623) wifi_init: tcp rx win: 5760[0m
+[0;32mI (633) wifi_init: tcp mss: 1440[0m
+[0;32mI (633) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (633) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (643) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (733) wifi:mode : softAP (3c:8a:1f:0c:ef:9d)[0m
+[0;32mI (843) wifi:Total power save buffer number: 16[0m
+[0;32mI (843) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (843) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (843) wifi softAP: wifi_init_softap finished. SSID:i dare you to join password:monsters12 channel:1[0m
+[0;32mI (843) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (863) wifi softAP: Called udp_server_task[0m
+[0;32mI (863) wifi softAP: Socket created[0m
+[0;32mI (873) wifi softAP: Socket bound, port 12345[0m
+[0;32mI (873) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (883) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (893) wifi softAP: I2C Initialized.[0m
+[0;32mI (893) main_task: Returned from app_main()[0m
+[0;32mI (1123) LCD: Initialized.[0m
+[0;32mI (11123) wifi softAP: LCD Initialized.[0m
+[0;32mI (11123) wifi softAP: Waiting for data[0m
+[0;32mI (12133) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (12133) wifi:station: 3c:8a:1f:0c:7c:c4 join, AID=1, bgn, 40U[0m
+[0;32mI (12163) wifi softAP: station 3c:8a:1f:0c:7c:c4 join, AID=1[0m
+[0;32mI (12223) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;31mE (21123) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (21123) wifi softAP: Waiting for data[0m
+[0;31mE (31123) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (31123) wifi softAP: Waiting for data[0m
+[0;32mI (33223) wifi:<ba-add>idx:2 (ifx:1, 3c:8a:1f:0c:7c:c4), tid:0, ssn:0, winSize:64[0m
+[0;32mI (33223) wifi softAP: Received 16 bytes from client 192.168.4.2:[0m
+[0;32mI (33223) wifi softAP: DINNER IS READY![0m
+[0;32mI (43593) wifi softAP: Waiting for data[0m
+[0;32mI (50993) wifi softAP: Received 16 bytes from client 192.168.4.2:[0m
+[0;32mI (50993) wifi softAP: DINNER IS READY![0m
+[0;32mI (61353) wifi softAP: Waiting for data[0m
+[0;31mE (71353) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (71353) wifi softAP: Waiting for data[0m
+[0;32mI (75983) wifi softAP: Received 16 bytes from client 192.168.4.2:[0m
+[0;32mI (75983) wifi softAP: DINNER IS READY![0m
+[0;32mI (86343) wifi softAP: Waiting for data[0m
+[0;31mE (96343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (96343) wifi softAP: Waiting for data[0m
+[0;31mE (106343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (106343) wifi softAP: Waiting for data[0m
+[0;31mE (116343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (116343) wifi softAP: Waiting for data[0m
+[0;31mE (126343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (126343) wifi softAP: Waiting for data[0m
+[0;31mE (136343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (136343) wifi softAP: Waiting for data[0m
+[0;31mE (146343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (146343) wifi softAP: Waiting for data[0m
+[0;31mE (156343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (156343) wifi softAP: Waiting for data[0m
+[0;31mE (166343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (166343) wifi softAP: Waiting for data[0m
+[0;31mE (176343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (176343) wifi softAP: Waiting for data[0m
+[0;31mE (186343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (186343) wifi softAP: Waiting for data[0m
+[0;31mE (196343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (196343) wifi softAP: Waiting for data[0m
+[0;31mE (206343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (206343) wifi softAP: Waiting for data[0m
+[0;31mE (216343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (216343) wifi softAP: Waiting for data[0m
+[0;31mE (226343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (226343) wifi softAP: Waiting for data[0m
+[0;31mE (236343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (236343) wifi softAP: Waiting for data[0m
+[0;31mE (246343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (246343) wifi softAP: Waiting for data[0m
+[0;31mE (256343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (256343) wifi softAP: Waiting for data[0m
+[0;31mE (266343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (266343) wifi softAP: Waiting for data[0m
+[0;31mE (276343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (276343) wifi softAP: Waiting for data[0m
+[0;31mE (286343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (286343) wifi softAP: Waiting for data[0m
+[0;31mE (296343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (296343) wifi softAP: Waiting for data[0m
+[0;31mE (306343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (306343) wifi softAP: Waiting for data[0m
+[0;31mE (316343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (316343) wifi softAP: Waiting for data[0m
+[0;31mE (326343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (326343) wifi softAP: Waiting for data[0m
+[0;31mE (336343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (336343) wifi softAP: Waiting for data[0m
+[0;31mE (346343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (346343) wifi softAP: Waiting for data[0m
+[0;31mE (356343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (356343) wifi softAP: Waiting for data[0m
+[0;31mE (366343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (366343) wifi softAP: Waiting for data[0m
+[0;31mE (376343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (376343) wifi softAP: Waiting for data[0m
+[0;31mE (386343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (386343) wifi softAP: Waiting for data[0m
+[0;31mE (396343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (396343) wifi softAP: Waiting for data[0m
+[0;31mE (406343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (406343) wifi softAP: Waiting for data[0m
+[0;31mE (416343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (416343) wifi softAP: Waiting for data[0m
+[0;31mE (426343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (426343) wifi softAP: Waiting for data[0m
+[0;31mE (436343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (436343) wifi softAP: Waiting for data[0m
+[0;31mE (446343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (446343) wifi softAP: Waiting for data[0m
+[0;31mE (456343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (456343) wifi softAP: Waiting for data[0m
+[0;31mE (466343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (466343) wifi softAP: Waiting for data[0m
+[0;31mE (476343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (476343) wifi softAP: Waiting for data[0m
+[0;31mE (486343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (486343) wifi softAP: Waiting for data[0m
+[0;31mE (496343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (496343) wifi softAP: Waiting for data[0m
+[0;31mE (506343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (506343) wifi softAP: Waiting for data[0m
+[0;31mE (516343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (516343) wifi softAP: Waiting for data[0m
+[0;31mE (526343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (526343) wifi softAP: Waiting for data[0m
+[0;31mE (536343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (536343) wifi softAP: Waiting for data[0m
+[0;31mE (546343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (546343) wifi softAP: Waiting for data[0m
+[0;31mE (556343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (556343) wifi softAP: Waiting for data[0m
+[0;31mE (566343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (566343) wifi softAP: Waiting for data[0m
+[0;31mE (576343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (576343) wifi softAP: Waiting for data[0m
+[0;31mE (586343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (586343) wifi softAP: Waiting for data[0m
+[0;31mE (596343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (596343) wifi softAP: Waiting for data[0m
+[0;31mE (606343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (606343) wifi softAP: Waiting for data[0m
+[0;31mE (616343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (616343) wifi softAP: Waiting for data[0m
+[0;31mE (626343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (626343) wifi softAP: Waiting for data[0m
+[0;31mE (636343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (636343) wifi softAP: Waiting for data[0m
+[0;31mE (646343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (646343) wifi softAP: Waiting for data[0m
+[0;31mE (656343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (656343) wifi softAP: Waiting for data[0m
+[0;31mE (666343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (666343) wifi softAP: Waiting for data[0m
+[0;31mE (676343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (676343) wifi softAP: Waiting for data[0m
+[0;31mE (686343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (686343) wifi softAP: Waiting for data[0m
+[0;31mE (696343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (696343) wifi softAP: Waiting for data[0m
+[0;31mE (706343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (706343) wifi softAP: Waiting for data[0m
+[0;31mE (716343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (716343) wifi softAP: Waiting for data[0m
+[0;31mE (726343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (726343) wifi softAP: Waiting for data[0m
+[0;31mE (736343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (736343) wifi softAP: Waiting for data[0m
+[0;31mE (746343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (746343) wifi softAP: Waiting for data[0m
+[0;31mE (756343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (756343) wifi softAP: Waiting for data[0m
+[0;31mE (766343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (766343) wifi softAP: Waiting for data[0m
+[0;31mE (776343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (776343) wifi softAP: Waiting for data[0m
+[0;31mE (786343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (786343) wifi softAP: Waiting for data[0m
+[0;31mE (796343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (796343) wifi softAP: Waiting for data[0m
+[0;31mE (806343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (806343) wifi softAP: Waiting for data[0m
+[0;31mE (816343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (816343) wifi softAP: Waiting for data[0m
+[0;31mE (826343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (826343) wifi softAP: Waiting for data[0m
+[0;31mE (836343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (836343) wifi softAP: Waiting for data[0m
+[0;31mE (846343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (846343) wifi softAP: Waiting for data[0m
+[0;31mE (856343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (856343) wifi softAP: Waiting for data[0m
+[0;31mE (866343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (866343) wifi softAP: Waiting for data[0m
+[0;31mE (876343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (876343) wifi softAP: Waiting for data[0m
+[0;31mE (886343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (886343) wifi softAP: Waiting for data[0m
+[0;31mE (896343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (896343) wifi softAP: Waiting for data[0m
+[0;31mE (906343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (906343) wifi softAP: Waiting for data[0m
+[0;31mE (916343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (916343) wifi softAP: Waiting for data[0m
+[0;31mE (926343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (926343) wifi softAP: Waiting for data[0m
+[0;31mE (936343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (936343) wifi softAP: Waiting for data[0m
+[0;31mE (946343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (946343) wifi softAP: Waiting for data[0m
+[0;31mE (956343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (956343) wifi softAP: Waiting for data[0m
+[0;31mE (966343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (966343) wifi softAP: Waiting for data[0m
+[0;31mE (976343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (976343) wifi softAP: Waiting for data[0m
+[0;31mE (986343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (986343) wifi softAP: Waiting for data[0m
+[0;31mE (996343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (996343) wifi softAP: Waiting for data[0m
+[0;31mE (1006343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1006343) wifi softAP: Waiting for data[0m
+[0;31mE (1016343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1016343) wifi softAP: Waiting for data[0m
+[0;31mE (1026343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1026343) wifi softAP: Waiting for data[0m
+[0;31mE (1036343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1036343) wifi softAP: Waiting for data[0m
+[0;31mE (1046343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1046343) wifi softAP: Waiting for data[0m
+[0;31mE (1056343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1056343) wifi softAP: Waiting for data[0m
+[0;31mE (1066343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1066343) wifi softAP: Waiting for data[0m
+[0;31mE (1076343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1076343) wifi softAP: Waiting for data[0m
+[0;31mE (1086343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1086343) wifi softAP: Waiting for data[0m
+[0;31mE (1096343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1096343) wifi softAP: Waiting for data[0m
+[0;31mE (1106343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1106343) wifi softAP: Waiting for data[0m
+[0;31mE (1116343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1116343) wifi softAP: Waiting for data[0m
+[0;31mE (1126343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1126343) wifi softAP: Waiting for data[0m
+[0;31mE (1136343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1136343) wifi softAP: Waiting for data[0m
+[0;31mE (1146343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1146343) wifi softAP: Waiting for data[0m
+[0;31mE (1156343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1156343) wifi softAP: Waiting for data[0m
+[0;31mE (1166343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1166343) wifi softAP: Waiting for data[0m
+[0;31mE (1176343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1176343) wifi softAP: Waiting for data[0m
+[0;31mE (1186343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1186343) wifi softAP: Waiting for data[0m
+[0;31mE (1196343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1196343) wifi softAP: Waiting for data[0m
+[0;31mE (1206343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1206343) wifi softAP: Waiting for data[0m
+[0;31mE (1216343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1216343) wifi softAP: Waiting for data[0m
+[0;31mE (1226343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1226343) wifi softAP: Waiting for data[0m
+[0;31mE (1236343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1236343) wifi softAP: Waiting for data[0m
+[0;31mE (1246343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1246343) wifi softAP: Waiting for data[0m
+[0;31mE (1256343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1256343) wifi softAP: Waiting for data[0m
+[0;31mE (1266343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1266343) wifi softAP: Waiting for data[0m
+[0;31mE (1276343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1276343) wifi softAP: Waiting for data[0m
+[0;31mE (1286343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1286343) wifi softAP: Waiting for data[0m
+[0;31mE (1296343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1296343) wifi softAP: Waiting for data[0m
+[0;31mE (1306343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1306343) wifi softAP: Waiting for data[0m
+[0;31mE (1316343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1316343) wifi softAP: Waiting for data[0m
+[0;31mE (1326343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1326343) wifi softAP: Waiting for data[0m
+[0;31mE (1336343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1336343) wifi softAP: Waiting for data[0m
+[0;31mE (1346343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1346343) wifi softAP: Waiting for data[0m
+[0;31mE (1356343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1356343) wifi softAP: Waiting for data[0m
+[0;31mE (1366343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1366343) wifi softAP: Waiting for data[0m
+[0;31mE (1376343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1376343) wifi softAP: Waiting for data[0m
+[0;31mE (1386343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1386343) wifi softAP: Waiting for data[0m
+[0;31mE (1396343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1396343) wifi softAP: Waiting for data[0m
+[0;31mE (1406343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1406343) wifi softAP: Waiting for data[0m
+[0;31mE (1416343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1416343) wifi softAP: Waiting for data[0m
+[0;31mE (1426343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1426343) wifi softAP: Waiting for data[0m
+[0;31mE (1436343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1436343) wifi softAP: Waiting for data[0m
+[0;31mE (1446343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1446343) wifi softAP: Waiting for data[0m
+[0;31mE (1456343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1456343) wifi softAP: Waiting for data[0m
+[0;31mE (1466343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1466343) wifi softAP: Waiting for data[0m
+[0;31mE (1476343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1476343) wifi softAP: Waiting for data[0m
+[0;31mE (1486343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1486343) wifi softAP: Waiting for data[0m
+[0;31mE (1496343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1496343) wifi softAP: Waiting for data[0m
+[0;31mE (1506343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1506343) wifi softAP: Waiting for data[0m
+[0;31mE (1516343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1516343) wifi softAP: Waiting for data[0m
+[0;31mE (1526343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1526343) wifi softAP: Waiting for data[0m
+[0;31mE (1536343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1536343) wifi softAP: Waiting for data[0m
+[0;31mE (1546343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1546343) wifi softAP: Waiting for data[0m
+[0;31mE (1556343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1556343) wifi softAP: Waiting for data[0m
+[0;31mE (1566343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1566343) wifi softAP: Waiting for data[0m
+[0;31mE (1576343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1576343) wifi softAP: Waiting for data[0m
+[0;31mE (1586343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1586343) wifi softAP: Waiting for data[0m
+[0;31mE (1596343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1596343) wifi softAP: Waiting for data[0m
+[0;31mE (1606343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1606343) wifi softAP: Waiting for data[0m
+[0;31mE (1616343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1616343) wifi softAP: Waiting for data[0m
+[0;31mE (1626343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1626343) wifi softAP: Waiting for data[0m
+[0;31mE (1636343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1636343) wifi softAP: Waiting for data[0m
+[0;31mE (1646343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1646343) wifi softAP: Waiting for data[0m
+[0;31mE (1656343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1656343) wifi softAP: Waiting for data[0m
+[0;31mE (1666343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1666343) wifi softAP: Waiting for data[0m
+[0;31mE (1676343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1676343) wifi softAP: Waiting for data[0m
+[0;31mE (1686343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1686343) wifi softAP: Waiting for data[0m
+[0;31mE (1696343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1696343) wifi softAP: Waiting for data[0m
+[0;31mE (1706343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1706343) wifi softAP: Waiting for data[0m
+[0;31mE (1716343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1716343) wifi softAP: Waiting for data[0m
+[0;31mE (1726343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1726343) wifi softAP: Waiting for data[0m
+[0;31mE (1736343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1736343) wifi softAP: Waiting for data[0m
+[0;31mE (1746343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1746343) wifi softAP: Waiting for data[0m
+[0;31mE (1756343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1756343) wifi softAP: Waiting for data[0m
+[0;31mE (1766343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1766343) wifi softAP: Waiting for data[0m
+[0;31mE (1776343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1776343) wifi softAP: Waiting for data[0m
+[0;31mE (1786343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1786343) wifi softAP: Waiting for data[0m
+[0;31mE (1796343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1796343) wifi softAP: Waiting for data[0m
+[0;31mE (1806343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1806343) wifi softAP: Waiting for data[0m
+[0;31mE (1816343) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1816343) wifi softAP: Waiting for data[0m
+[0;32mI (1819633) wifi softAP: Received 16 bytes from client 192.168.4.2:[0m
+[0;32mI (1819633) wifi softAP: DINNER IS READY![0m
+[0;32mI (1829993) wifi softAP: Waiting for data[0m
+[0;31mE (1839993) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1839993) wifi softAP: Waiting for data[0m
+[0;31mE (1849993) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1849993) wifi softAP: Waiting for data[0m
+[0;31mE (1859993) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1859993) wifi softAP: Waiting for data[0m
+[0;31mE (1869993) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1869993) wifi softAP: Waiting for data[0m
+[0;31mE (1879993) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1879993) wifi softAP: Waiting for data[0m
+[0;31mE (1889993) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1889993) wifi softAP: Waiting for data[0m
+[0;31mE (1899993) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1899993) wifi softAP: Waiting for data[0m
+[0;31mE (1909993) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1909993) wifi softAP: Waiting for data[0m
+[0;31mE (1919993) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1919993) wifi softAP: Waiting for data[0m
+[0;31mE (1929993) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1929993) wifi softAP: Waiting for data[0m
+[0;31mE (1939993) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1939993) wifi softAP: Waiting for data[0m
+[0;31mE (1949993) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1949993) wifi softAP: Waiting for data[0m
+[0;31mE (1959993) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1959993) wifi softAP: Waiting for data[0m
+[0;31mE (1969993) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1969993) wifi softAP: Waiting for data[0m
+[0;31mE (1979993) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1979993) wifi softAP: Waiting for data[0m
+[0;31mE (1989993) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (1989993) wifi softAP: Waiting for data[0m
+[0;32mI (1992093) wifi softAP: Received 16 bytes from client 192.168.4.2:[0m
+[0;32mI (1992093) wifi softAP: DINNER IS READY![0m
+[0;32mI (2002453) wifi softAP: Waiting for data[0m
+[0;31mE (2012453) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2012453) wifi softAP: Waiting for data[0m
+[0;31mE (2022453) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2022453) wifi softAP: Waiting for data[0m
+[0;31mE (2032453) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2032453) wifi softAP: Waiting for data[0m
+[0;31mE (2042453) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2042453) wifi softAP: Waiting for data[0m
+[0;31mE (2052453) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2052453) wifi softAP: Waiting for data[0m
+[0;32mI (2057193) wifi softAP: Received 16 bytes from client 192.168.4.2:[0m
+[0;32mI (2057193) wifi softAP: DINNER IS READY![0m
+[0;32mI (2067553) wifi softAP: Waiting for data[0m
+[0;31mE (2077553) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2077553) wifi softAP: Waiting for data[0m
+[0;31mE (2087553) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2087553) wifi softAP: Waiting for data[0m
+[0;31mE (2097553) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2097553) wifi softAP: Waiting for data[0m
+[0;31mE (2107553) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2107553) wifi softAP: Waiting for data[0m
+[0;31mE (2117553) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2117553) wifi softAP: Waiting for data[0m
+[0;31mE (2127553) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2127553) wifi softAP: Waiting for data[0m
+[0;31mE (2137553) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2137553) wifi softAP: Waiting for data[0m
+[0;31mE (2147553) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2147553) wifi softAP: Waiting for data[0m
+[0;31mE (2157553) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2157553) wifi softAP: Waiting for data[0m
+[0;31mE (2167553) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2167553) wifi softAP: Waiting for data[0m
+[0;31mE (2177553) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2177553) wifi softAP: Waiting for data[0m
+[0;31mE (2187553) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2187553) wifi softAP: Waiting for data[0m
+[0;31mE (2197553) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2197553) wifi softAP: Waiting for data[0m
+[0;31mE (2207553) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2207553) wifi softAP: Waiting for data[0m
+[0;31mE (2217553) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2217553) wifi softAP: Waiting for data[0m
+[0;31mE (2227553) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2227553) wifi softAP: Waiting for data[0m
+[0;31mE (2237553) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2237553) wifi softAP: Waiting for data[0m
+[0;31mE (2247553) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2247553) wifi softAP: Waiting for data[0m
+[0;31mE (2257553) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2257553) wifi softAP: Waiting for data[0m
+[0;32mI (2263523) wifi softAP: Received 16 bytes from client 192.168.4.2:[0m
+[0;32mI (2263523) wifi softAP: DINNER IS READY![0m
+[0;32mI (2273883) wifi softAP: Waiting for data[0m
+[0;31mE (2283883) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2283883) wifi softAP: Waiting for data[0m
+[0;31mE (2293883) wifi softAP: recvfrom failed: errno 11[0m
+[0;32mI (2293883) wifi softAP: Waiting for data[0m

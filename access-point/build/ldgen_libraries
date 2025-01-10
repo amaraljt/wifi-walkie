@@ -79,4 +79,5 @@
 /home/szensei/Projects/wifi_walkie/access-point/build/esp-idf/perfmon/libperfmon.a
 /home/szensei/Projects/wifi_walkie/access-point/build/esp-idf/spiffs/libspiffs.a
 /home/szensei/Projects/wifi_walkie/access-point/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
+/home/szensei/Projects/wifi_walkie/access-point/build/esp-idf/espressif__button/libespressif__button.a
 /home/szensei/Projects/wifi_walkie/access-point/build/esp-idf/main/libmain.a
